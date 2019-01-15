@@ -7,7 +7,7 @@ box-sizing: border-box;
 
 body {
   background-color: #ffffff;
-  font-family: helvetica;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 10px;
 }
 
@@ -16,26 +16,24 @@ body {
  top: 20px;
  margin: 0 auto;
  text-align: center;
- width: 375px;
+ width: 100%;
 
 
 }
 .container-class {
-  background-image: url(images/Rectangle.png);
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #C1BBD2 0%, rgba(96, 78, 146, 0) 100%);
   background-position: center top;
   position: relative;
   margin: 0 auto;
-  padding-top: 0px;
+  padding-top: 79px;
   width: 375px;
-  height: 70px;
+  height: 79px;
 }
 
 .container-top {
-  width: 375px;
+  width: 100%;
   height: 20px;
   position: absolute;
-  background-image: url(images/Base.png);
   background-position: center top;
   top: 0%;
   margin: 0 auto;
@@ -45,8 +43,8 @@ body {
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(images/busybusmap.png)no-repeat;
-  width: 375px;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 168px;
   padding-top: 4px;
   margin: 0 auto;
@@ -63,17 +61,26 @@ body {
   background-color: #F1F1F1;
 }
 
+.back {
+  position: absolute;
+  top: 35px;
+  padding-left: 15px;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+
+}
 
 .arrow-left {
-  position: absolute;
-  padding-left: 8px;
+  display: inline-block;
+  padding-left: 5px;
   padding-top: 35px;
-  width: 375px;
+  width: 100%;
 }
 
 h1 {
   color: #2A126D;
-  font-family: helvetica;
+  font-family: SF Pro display;
   font-size: 16px;
   line-height: 200%;
   font-weight: 700;
@@ -85,7 +92,7 @@ h1 {
 
 h2 {
   color: 	#808080;
-  font-family: helvetica;
+  font-family: SF Pro display;
   font-size: 14px;
   line-height: 120%;
   font-weight:500;
@@ -97,7 +104,7 @@ h2 {
 
 h3 {
   color: 	#000000;
-  font-family: helvetica;
+  font-family: SF Pro display;
   font-size: 15px;
   line-height: 120%;
   font-weight:400;
@@ -107,7 +114,7 @@ h3 {
 
 h4 {
   color: #000000;
-  font-family: helvetica;
+  font-family: SF Pro display;
   font-size: 26px;
   line-height: 200%;
   font-weight: 700;
@@ -116,11 +123,10 @@ h4 {
 }
 
 h5 {
-  color: #000000;
-  font-family: helvetica;
-  font-size: 18px;
+  color: #2A126D;
+  font-family: SF Pro display;
+  font-size: 16px;
   line-height: 120%;
-  color: #000000;
   font-weight:600;
   text-align: left;
   padding-left: 3px
@@ -129,7 +135,7 @@ h5 {
 
 h6 {
   color: #000000;
-  font-family: helvetica;
+  font-family: SF Pro display;
   font-size: 18px;
   line-height: 120%;
   color: #000000;
@@ -145,7 +151,7 @@ h6 {
   margin-top: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 375px;
+  width: 100%;
 }
 .content {
  width: 100%;
@@ -161,11 +167,10 @@ h6 {
   background-color: #F1F1F1;
 }
 .block {
-  width: 375px;
+  width: 100%;
 }
 
 .location {
-  display: block;
   box-sizing: border-box;
   width: 100%;
   padding-left: 1px;
@@ -178,6 +183,10 @@ h6 {
   background-color: #ffffff;
 
 }
+.location > * {
+  flex: 1 100%;
+}
 .data {
-  width:375px;
+  width:100%;
+  flex: 1;
 }
