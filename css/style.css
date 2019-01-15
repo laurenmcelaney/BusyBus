@@ -7,7 +7,7 @@ box-sizing: border-box;
 
 body {
   background-color: #ffffff;
-  font-family: SF pro display;
+  font-family: helvetica;
   font-size: 10px;
 }
 
@@ -21,35 +21,35 @@ body {
 
 }
 .container-class {
-  background-image: url(/images/Rectangle.png);
+  background-image: url(images/Rectangle.png);
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
   margin: 0 auto;
-  padding-top: 75px;
+  padding-top: 0px;
   width: 375px;
-  height: 200px;
+  height: 70px;
 }
 
 .container-top {
   width: 375px;
   height: 20px;
   position: absolute;
-  background-image: url(/images/Base.png);
+  background-image: url(images/Base.png);
   background-position: center top;
   top: 0%;
   margin: 0 auto;
 }
 
 .map {
-  background-image: url(/images/busybusmap.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  position: relative;
-  margin: 0 auto;
-  padding-top: 75px;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(images/busybusmap.png)no-repeat;
   width: 375px;
   height: 168px;
+  padding-top: 4px;
+  margin: 0 auto;
 }
 
 
@@ -73,7 +73,7 @@ body {
 
 h1 {
   color: #2A126D;
-  font-family: SF pro display;
+  font-family: helvetica;
   font-size: 16px;
   line-height: 200%;
   font-weight: 700;
@@ -84,28 +84,30 @@ h1 {
 
 
 h2 {
-  color: 	#696969;
-  font-family: SF pro display;
-  font-size: 15px;
+  color: 	#808080;
+  font-family: helvetica;
+  font-size: 14px;
   line-height: 120%;
   font-weight:500;
   text-align: center;
+  padding-left: 3px;
+
 
 }
 
 h3 {
-  color: 	#808080;
-  font-family: SF pro display;
+  color: 	#000000;
+  font-family: helvetica;
   font-size: 15px;
   line-height: 120%;
   font-weight:400;
   text-align: center;
-
+  padding-left: 5px;
 }
 
 h4 {
   color: #000000;
-  font-family: SF pro display;
+  font-family: helvetica;
   font-size: 26px;
   line-height: 200%;
   font-weight: 700;
@@ -115,25 +117,28 @@ h4 {
 
 h5 {
   color: #000000;
-  font-family: SF pro display;
+  font-family: helvetica;
   font-size: 18px;
   line-height: 120%;
   color: #000000;
   font-weight:600;
-  text-align: center;
+  text-align: left;
+  padding-left: 3px
 
 }
 
 h6 {
   color: #000000;
-  font-family: SF pro display;
+  font-family: helvetica;
   font-size: 18px;
   line-height: 120%;
   color: #000000;
   font-weight:600;
-  text-align: center;
+  text-align: left;
+  padding-left: 3px;
 
 }
+
 
 .container {
   background-color: #DCDCDC;
