@@ -11,47 +11,48 @@ body {
   font-size: 10px;
 }
 
-.maintitle {
- position: absolute;
- top: 20px;
- margin: 0 auto;
- text-align: center;
- width: 100%;
-
-
+.contenttop{
+  display: inline-block;
 }
 .container-class {
   background: linear-gradient(180deg, #C1BBD2 0%, rgba(96, 78, 146, 0) 100%);
-  background-position: center top;
-  position: relative;
   margin: 0 auto;
-  padding-top: 79px;
   width: 375px;
   height: 79px;
+
+}
+.maintitle {
+  display: inline-block;
+ text-align: center;
+ width: 100%;
+ padding-top: 10px;
+
 }
 
 .container-top {
   width: 100%;
   height: 20px;
-  position: absolute;
-  background-position: center top;
+   background-position: center top;
   top: 0%;
+  display:inline-block;
 }
 
-.map {
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
+.arrow-left {
+  float: left;
+  display:inline-block;
+  padding-left: 5px;
+  padding-top: 25px;
   width: 100%;
-  height: 168px;
-  padding-top: 4px;
-  margin: 0 auto;
+  margin-left: 10px;
 }
 
+.back {
+  display:inline-flex;
+  text-align:left;
+  margin-left: 2px;
 
+}
 .arrow {
-  display: block;
   float: none;
   padding: 3px;
   padding-left: 45%;
@@ -60,28 +61,19 @@ body {
   background-color: #F1F1F1;
 }
 
-.back {
-  position: absolute;
-  top: 35px;
-  padding-left: 15px;
+.map {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 168px;
+  padding-top: 2px;
   margin: 0 auto;
-  text-align: left;
-  width: 100%;
-
-}
-
-.arrow-left {
-  display: inline-block;
-  padding-left: 5px;
-  padding-top: 35px;
-  width: 100%;
-  margin-left: 10px;
 }
 
 
 h1 {
   color: #2A126D;
-  font-family: SF Pro display;
   font-size: 16px;
   line-height: 200%;
   font-weight: 700;
@@ -93,7 +85,6 @@ h1 {
 
 h2 {
   color: 	#808080;
-  font-family: SF Pro display;
   font-size: 14px;
   line-height: 120%;
   font-weight:500;
@@ -105,7 +96,6 @@ h2 {
 
 h3 {
   color: 	#000000;
-  font-family: SF Pro display;
   font-size: 15px;
   line-height: 120%;
   font-weight:400;
@@ -115,8 +105,7 @@ h3 {
 
 h4 {
   color: #000000;
-  font-family: SF Pro display;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 200%;
   font-weight: 700;
   margin: 0;
@@ -125,7 +114,6 @@ h4 {
 
 h5 {
   color: #2A126D;
-  font-family: SF Pro display;
   font-size: 16px;
   line-height: 120%;
   font-weight:600;
@@ -136,7 +124,6 @@ h5 {
 
 h6 {
   color: #000000;
-  font-family: SF Pro display;
   font-size: 18px;
   line-height: 120%;
   color: #000000;
@@ -155,14 +142,8 @@ h6 {
   width: 100%;
 
 }
-.content {
- width: 100%;
- position: relative;
-
-
-}
 .row {
-  position: absolute;
+  float:left;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -192,11 +173,18 @@ h6 {
   flex-direction: row;
   background-color: #ffffff;
 
+
 }
 .location > * {
   flex: 1 100%;
 }
-.data {
-  width:100%;
-  flex: 1;
+.data1 {
+  flex: 0 1 110px;
+}
+.data2 {
+flex: 1;
+}
+
+.data3 {
+  flex: 0 1 120px;
 }
