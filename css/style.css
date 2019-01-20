@@ -74,11 +74,10 @@ body {
 
 h1 {
   color: #2A126D;
-  font-size: 16px;
-  line-height: 200%;
+  font-size: 14px;
+  line-height: 250%;
   font-weight: 700;
   margin: 0;
-  text-align: center;
 
 }
 
@@ -100,7 +99,6 @@ h3 {
   line-height: 120%;
   font-weight:400;
   text-align: left;
-  padding-left: 5px;
 }
 
 h4 {
@@ -114,7 +112,7 @@ h4 {
 
 h5 {
   color: #2A126D;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 120%;
   font-weight:600;
   text-align: center;
@@ -154,11 +152,9 @@ h6 {
 }
 
 .reroute {
- border:3px solid #FF0000;
  background-color: #FFCBCB;
 }
 .outofservice {
- border:3px solid #696969;
  background-color: #9C9C9C;
 }
 .location {
@@ -175,6 +171,10 @@ h6 {
 
 
 }
+
+.location:hover {
+  background-color: #ECECEC;
+}
 .location > * {
   flex: 1 100%;
 }
@@ -188,3 +188,4 @@ flex: 1;
 .data3 {
   flex: 0 1 120px;
 }
+
